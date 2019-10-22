@@ -8,6 +8,7 @@ import exeption.SAISIException;
 import java.util.Scanner;
 import java.util.Stack;
 
+
 /**
  *
  * @author HP
@@ -17,7 +18,7 @@ public class CalculatriceRPN {
     	private MoteurRPN cal;
     	Stack<Double> p = new Stack<> ();//creation de la pile devant servir à stocker les operandes
     	
-    	public CalculatriceRPN(){
+    	public SaisieRPN(){
 			cal = new MoteurRPN();
 		}
     	
@@ -159,16 +160,16 @@ public class CalculatriceRPN {
 					}					
 				} else
 					try {
-						throw new SAISIEException("Erreur de saisie.Veuillez saisir un nombre réel \n");
-					} catch (SAISIEException e) {
+						throw new SAISIException("Erreur de saisie.Veuillez saisir un nombre réel \n");
+					} catch (SAISIException e) {
 						e.printStackTrace();
 					}
 				System.out.println("\nLa pile contient:"+cal.getP());
 				}while(true);
 			}
 
-	public Operation signe(String sign) {
-		switch (sign) {
+ public Operation signe(String sign) {
+     switch (sign) {
         case "+":
             return Operation.ADD;
         case "-":

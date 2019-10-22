@@ -4,11 +4,15 @@
  * and open the template in the editor.
  */
 package calculatricerpn;
+import exeption.DivideException;
 
 /**
  *
  * @author HP
  */
+
+//Implementation de l 'enumeration
+
 public enum Operation {
     
     
@@ -50,7 +54,7 @@ public enum Operation {
   private Operation (String symbole)
   {
 	
-	this.symbole= symbole;
+	this.symbole = symbole;
 	
 }
   public String getsymbole() {  

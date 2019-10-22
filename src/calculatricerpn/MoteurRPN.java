@@ -11,6 +11,7 @@ import java.util.Stack;
  *
  * @author HP
  */
+// Implementation de la classe Moteur
 public class MoteurRPN {
     
     Stack<Double> p = new Stack<> ();
@@ -24,18 +25,18 @@ public class MoteurRPN {
 	}
 	
         
-        //cette methode permet d'enregistrer une operande 
-	public void enregistrer(Double value) {
-		if (value> MAX_VALUE || value< MIN_VALUE)
-			try {
-				throw new MAXMINException ("La valeur de l'interval n'est pas respecté\n");
+        //methode pour enregistrer une operande 
+	public void enregistrer(Double value) throws MAXMINException{
+		if (value> MAX_VALUE || value< MIN_VALUE) throw new MAXMINException ("La valeur entrée ne correspond pas à l'intervall\n");
+			/*try {
+				throw new MAXMINException ("La valeur entrée ne correspond pas à l'intervall\n");
 			} catch (MAXMINException e) {
-			}
+			}*/
 		else
 		p.push(value);
                 
 	}
-	//cette methode permet d'appliquer une operation sur les operandes
+	//methode pour appliquer une operation sur les operandes
 	public void calcul(Operation op){	
                         double resultat;
 			Double v = depile();//depiler la première operande
