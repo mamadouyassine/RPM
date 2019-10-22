@@ -51,13 +51,13 @@ public class MoteurRPN {
 		
 	}
 	
-        //cette fonction permet de depiler l'element se trouvant à la tete de la pile
+        //methode pour depiler 
 	public double depile() 
 	{	
 		if (p.isEmpty());
 		return p.pop() ;		  
 	}
-	//cette fonction renvoie le nombre d'operande
+	//methode retourner l’ensemble des opérandes stockées
 	public int nbrOperande()
 	{
 		return p.size();

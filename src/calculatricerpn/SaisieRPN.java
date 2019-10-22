@@ -73,8 +73,8 @@ public class SaisieRPN {
 					}					
 				} else
 					try {
-						throw new SAISIEException("Erreur de saisie.Veuillez saisir un nombre réel \n");
-					} catch (SAISIEException e) {
+						throw new SAISIException("Erreur de saisie.Veuillez saisir un nombre réel \n");
+					} catch (SAISIException e) {
 						e.printStackTrace();
 					}
 				System.out.println("\nLa pile contient:"+cal.getP());
