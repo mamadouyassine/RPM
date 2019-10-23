@@ -50,7 +50,7 @@ public class SaisieRPN {
 			Scanner sc=new Scanner(System.in);
 			int Compteur=0;
 			do{				
-				System.out.println("Veuillez saisir un nombre  ou un operateur:");
+				System.out.println("Entrez un nombre  ou un operateur:");
 				String sign = sc.nextLine();
 				if(sign.equals("exit")) return ;
 				
@@ -77,8 +77,10 @@ public class SaisieRPN {
 					} catch (SAISIException e) {
 						e.printStackTrace();
 					}
-				System.out.println("\nLa pile contient:"+cal.getP());
-				}while(true);
+                                 
+				System.out.println("\n La pile contient:"+cal.getP());
+                                
+			}while(true);
 			}
 
 	public Operation signe(String sign) {

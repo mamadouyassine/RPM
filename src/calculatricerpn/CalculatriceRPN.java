@@ -12,9 +12,9 @@ import exeption.SAISIException;
  *
  * @author HP
  */
-public class CalculatriceRPN {
+public enum CalculatriceRPN {
     
-    	//val1;
+    	val1;
 	CalculatriceRPN() 
 	{
 	
@@ -28,7 +28,7 @@ public class CalculatriceRPN {
 	}
 	
 	public static void main(String[] args) {
-		CalculatriceRPN e;	
+		CalculatriceRPN f;	
 	}
 		
     

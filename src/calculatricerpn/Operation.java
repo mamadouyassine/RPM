@@ -4,19 +4,17 @@
  * and open the template in the editor.
  */
 package calculatricerpn;
+
 import exeption.DivideException;
 
 /**
  *
  * @author HP
  */
-
-//Implementation de l 'enumeration
-
 public enum Operation {
     
     
-	MULT("*") {
+    MULT("*") {
 		@Override
 		public double eval(double a, double b) {
 		
@@ -63,6 +61,12 @@ public enum Operation {
   
   public abstract double eval (double a, double b);
   
+    
+    
+   
+    
+    
+    
     
     
 }
